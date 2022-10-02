@@ -1,0 +1,49 @@
+fieldset {
+  border-collapse: collapse;
+}
+
+.pill-group {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.pill-group input {
+  display: none;
+}
+
+.pill-group label {
+  cursor: pointer;
+  background-color: #0085c8;
+  color: #ffe877;
+  padding: 5px 10px;
+  border: 1px solid #003f5e;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.pill-group span:not(:last-child) label {
+  border-right: none;
+}
+
+.pill-group span:first-child label {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.pill-group span:last-child label {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.pill-group span input:checked + label {
+  background-color: #ffe877;
+  color: #0085c8;
+}
+
+.advice {
+  font-size: 0.8em;
+  display: none;
+}
+
+.show {
+  display: block;
+}
